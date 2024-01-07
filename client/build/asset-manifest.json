@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc8a01be.css",
+    "main.js": "/static/js/main.fb23af39.js",
+    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/jobFinderBg.png": "/static/media/jobFinderBg.915fe07a59243d296af1.png",
+    "static/media/addJobWallpaper.png": "/static/media/addJobWallpaper.10a1110391075c1ba8b2.png",
+    "static/media/flag.svg": "/static/media/flag.85e10e3e9c550f651a910c9cde53c8cd.svg",
+    "static/media/header.PNG": "/static/media/header.88545b8174fe4c6739ca.PNG",
+    "static/media/loading.svg": "/static/media/loading.4d1faba2a2d824d4d34e3c18b672cc11.svg",
+    "static/media/moneyIcon.svg": "/static/media/moneyIcon.8d1cc375762a653668606405fd0e2343.svg",
+    "static/media/people.svg": "/static/media/people.029cdbbc81c9236b654309ad22a11882.svg",
+    "static/media/searchIcon.svg": "/static/media/searchIcon.633f4e04ad869930be6d.svg",
+    "static/media/calenderIcon.svg": "/static/media/calenderIcon.74b33ab6014a95a97b0b90505e83e61b.svg",
+    "index.html": "/index.html",
+    "static/media/rupee.svg": "/static/media/rupee.018513d3ea3d1c25600b0130b6ac9bc2.svg",
+    "main.fc8a01be.css.map": "/static/css/main.fc8a01be.css.map",
+    "main.fb23af39.js.map": "/static/js/main.fb23af39.js.map",
+    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc8a01be.css",
+    "static/js/main.fb23af39.js"
+  ]
+}

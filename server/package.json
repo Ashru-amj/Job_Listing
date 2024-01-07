@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-modules index.js"
+    "install" :"cd client && npm i && cd .. && cd server && npm i",
+      "build" : "cd client && npm run build"
   },
   "keywords": [],
   "author": "",

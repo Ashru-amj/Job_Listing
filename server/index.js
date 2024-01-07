@@ -1,17 +1,28 @@
 import express from "express";
 import dotenv from "dotenv";
+import { fileURLToPath } from 'url';  // Import fileURLToPath function
+import { dirname } from 'path';  
 import connectToDatabase from "./db/db.js";
 import User from "../server/models/user.js";
 import Job from "../server/models/job.js"
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken"; 
 import cors from "cors";
+import path from "path";
 
 const app = express();
 dotenv.config();
 
 app.use(cors());
 app.use(express.json());
+
+
+// Get the directory name using dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Use the updated __dirname here
+app.use(express.static(path.join(__dirname,"..","client","build")));
 
 // Health check API
 app.get("/health", (req, res) => {

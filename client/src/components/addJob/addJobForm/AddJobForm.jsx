@@ -4,6 +4,7 @@ import axios from "axios";
 import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import config from "../../../config";
 
 export default function AddJobForm(props) {
   const [showInternshipDuration, setShowInternshipDuration] = useState(false);
@@ -27,7 +28,7 @@ export default function AddJobForm(props) {
     const editingJobId = queryParameters.get("id");
     if (editingJobId) {
       axios
-        .get(process.env.REACT_APP_BASE_URL + "/api/jobs/" + editingJobId)
+        .get(config.REACT_APP_BASE_URL + "/api/jobs/" + editingJobId)
         .then((res) => {
           setEditingJob(res.data);
           jobTypeRef.current.value = res.data.jobType;
@@ -47,7 +48,7 @@ export default function AddJobForm(props) {
       if (!editingJob) {
         axios
           .post(
-            process.env.REACT_APP_BASE_URL + "/api/jobs/",
+            config.REACT_APP_BASE_URL + "/api/jobs/",
             {
               companyName: companyNameRef.current.value,
               position: positionRef.current.value,
@@ -90,7 +91,7 @@ export default function AddJobForm(props) {
       } else {
         axios
           .put(
-            process.env.REACT_APP_BASE_URL + "/api/jobs/" + editingJob._id,
+            config.REACT_APP_BASE_URL + "/api/jobs/" + editingJob._id,
             {
               companyName: companyNameRef.current.value,
               position: positionRef.current.value,

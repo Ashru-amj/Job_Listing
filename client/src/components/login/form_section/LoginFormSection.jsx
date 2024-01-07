@@ -25,8 +25,8 @@
 //       <form
 //         onSubmit={async (e) => {
 //           e.preventDefault();
-//           console.log(process.env.REACT_APP_BASE_URL)
-//           let res = await axios.post(process.env.REACT_APP_BASE_URL +  "/login", {
+//           console.log(config.REACT_APP_BASE_URL)
+//           let res = await axios.post(config.REACT_APP_BASE_URL +  "/login", {
 //             email: emailRef.current.value,
 //             password: passRef.current.value,
 //           });
@@ -88,6 +88,7 @@ import styles from '../form_section/LoginFormSection.module.css';
 import axios from 'axios';
 import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import config from '../../../config';
 
 const LoginFormSection = () => {
   const emailRef = useRef();
@@ -99,11 +100,11 @@ const LoginFormSection = () => {
     e.preventDefault();
 
     // Log the base URL to verify
-    console.log('Base URL:', process.env.REACT_APP_BASE_URL);
+    console.log('Base URL:', config.REACT_APP_BASE_URL);
 
     try {
       // Construct the complete URL
-      const url = `${process.env.REACT_APP_BASE_URL}/login`;
+      const url = `${config.REACT_APP_BASE_URL}/login`;
 
       // Log the complete URL to verify
       console.log('Complete URL:', url);

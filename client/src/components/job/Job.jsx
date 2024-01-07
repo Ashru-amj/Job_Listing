@@ -4,7 +4,7 @@ import Header from "../common/header/Header";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
+import config from "../../config";
 import calenderIcon from "./images/calenderIcon.svg";
 import moneyIcon from "./images/moneyIcon.svg";
 import loadingGif from "./../common/loading.svg";
@@ -20,7 +20,7 @@ export default function Job() {
     const localData = JSON.parse(localStorage.getItem("data"));
     if (localData) {
       axios
-        .get(process.env.REACT_APP_BASE_URL + "/authenticate", {
+        .get(config.REACT_APP_BASE_URL + "/authenticate", {
           headers: {
             token: localData.jwtToken,
           },
@@ -36,7 +36,7 @@ export default function Job() {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_BASE_URL + "/api/jobs/" + id)
+      .get(config.REACT_APP_BASE_URL + "/api/jobs/" + id)
       .then((res) => {
         setJob(res.data);
         console.log(res.data);

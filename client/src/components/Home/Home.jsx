@@ -1,14 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import config from "../../config";
 import styles from "./Home.module.css";
 import Header from "../common/header/Header";
 import SearchSection from "./searchSection/SearchSection";
 import JobCard from "./jobCard/JobCard";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import loadingGif from "./../common/loading.svg";
+
+import loadingGif from "../common/loading.svg";
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,7 +24,7 @@ export default function Home() {
     const localData = JSON.parse(localStorage.getItem("data"));
     if (localData) {
       axios
-        .get(process.env.REACT_APP_BASE_URL + "/authenticate", {
+        .get(config.REACT_APP_BASE_URL + "/authenticate", {
           headers: {
             token: localData.jwtToken,
           },
@@ -39,7 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_BASE_URL + "/api/jobs")
+      .get(config.REACT_APP_BASE_URL + "/api/jobs")
       .then((res) => {
         let allSkillsToSet = [];
         res.data.map((jobItem) => {
@@ -57,7 +58,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_BASE_URL + "/api/jobs", {
+      .get(config.REACT_APP_BASE_URL + "/api/jobs", {
         params: { filterBySkills: skills },
       })
       .then((res) => {

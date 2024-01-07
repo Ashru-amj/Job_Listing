@@ -1,7 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import styles from "./RegisterFormSection.module.css";
-
+import config from "../../../config";
 import { useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ export default function FormSection() {
 
       <form onSubmit={ async (e) => {
         e.preventDefault()
-        let res = await axios.post(process.env.REACT_APP_BASE_URL + '/register', {
+        let res = await axios.post(config.REACT_APP_BASE_URL + '/register', {
           name: nameRef.current.value,
           email: emailRef.current.value,
           mobile: mobileRef.current.value,

@@ -113,7 +113,7 @@ const LoginFormSection = () => {
         email: emailRef.current.value,
         password: passRef.current.value,
       });
-
+      axios.get('/api/jobs')
       // Handle different status codes
       switch (res.data.status) {
         case 200:

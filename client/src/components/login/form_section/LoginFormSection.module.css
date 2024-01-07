@@ -1,0 +1,78 @@
+.formSection{
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 6%;
+    box-sizing: border-box;
+}
+.formHeading{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 5% 0px;
+}
+.formHeading h1{
+    margin-bottom: 10px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.loginForm button{
+    width: 30%;
+}
+
+.loginForm input{
+    margin: 2% 0px;
+    color: black;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 2.5% 2%;
+}
+.loginForm input::placeholder{
+    color: black;
+}
+.loginForm button{
+    padding: 3% 4%;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background: #ED5353;
+    border-radius: 5px;
+    margin: 4% 0px;
+    cursor: pointer;
+}
+.errorMessage{
+    padding: 1% 5%;
+    text-align: center;
+    box-sizing: border-box;
+    background: #f13c3c;
+    color: white;
+    border: solid 2px #c90000;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    width: 80%;
+}
+.backButton{
+    padding: 10px 0px;
+    width: 70px;
+    border: solid 2px #ED5353;
+    color: #ED5353;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+@media (max-width: 768px) {
+    .formSection{
+        width: 100%;
+        padding-left: 10%;
+        font-size: 1.2rem;
+    }
+    .formHeading h1{
+        font-size: 2.5rem;
+    }
+}

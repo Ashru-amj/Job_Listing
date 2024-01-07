@@ -1,0 +1,73 @@
+.addJobFormWrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 5% 0px 0px 5%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.jobHeading{
+    margin-top:15%;
+}
+.addJobForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.addJobFormRow{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0px;
+}
+.inputLabel{
+    width: 35%;
+    max-width: 50%;
+    font-size: 1.2rem;
+}
+.addJobFormInput{
+    width: 65%;
+    padding: 8px;
+    border: solid 2px #C2C2C2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.inputSelect{
+    border: solid 2px #C2C2C2;
+    padding: 5px;
+    color: #C2C2C2;
+    width: 20%;
+    text-align: center;
+}
+.inputSelect option{
+    color:  black;
+}
+.buttonsRow{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    align-items: center;
+    margin-top: 10px;
+}
+.cancelButton{
+    background: white;
+    padding: 8px 20px;
+    border: solid 1px #CECECE;
+    color: #CECECE;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+.submitButton{
+    color: white;
+    padding: 8px 20px;
+    background: #ED5353;
+    border-radius: 7px;
+    border: none;
+}
+@media(max-width: 768px) {
+    .addJobFormWrapper{
+        width: 100%;
+    }
+}

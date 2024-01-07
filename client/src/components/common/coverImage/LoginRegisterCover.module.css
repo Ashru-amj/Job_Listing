@@ -1,0 +1,15 @@
+.imageSection{
+    width: 45%;
+    background: url('../jobFinderBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+.jobFinderMessage{
+    color: white;
+    font-size: 2.4rem;
+}

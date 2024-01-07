@@ -1,0 +1,82 @@
+.formSection {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 6%;
+    box-sizing: border-box;
+  }
+  .formHeading {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 5% 0px;
+  }
+  .formHeading h1 {
+    margin-bottom: 10px;
+  }
+  
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .registerForm input {
+    margin: 2% 0px;
+    color: black;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 2.5% 2%;
+  }
+  .registerForm input::placeholder {
+    color: black;
+  }
+  .registerForm button {
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 3% 4%;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background: #ed5353;
+    border-radius: 5px;
+    margin: 4% 0px;
+    cursor: pointer;
+  }
+  .errorMessage {
+    padding: 1% 5%;
+    text-align: center;
+    box-sizing: border-box;
+    background: #f13c3c;
+    color: white;
+    border: solid 2px #c90000;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    width: 80%;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .backButton{
+    padding: 10px 0px;
+    width: 70px;
+    box-sizing: border-box;
+    border: solid 2px #ED5353;
+    color: #ED5353;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .formSection{
+      width: 100%;
+      font-size: 1.2rem;
+    }
+    .formHeading h1{
+      font-size: 2.5rem;
+    }
+  }

@@ -1,0 +1,130 @@
+.jobsCard{
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 0px 22px 2px #FF202040;
+    margin: 10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.jobCardLeftWrapper{
+    display: flex;
+    width: 50%;
+}
+.jobCardRightWrapper{
+    display: flex;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.companyLogoWrapper{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.companyLogo{
+    width: 70%;
+    height: fit-content;
+}
+.jobDetailsWrapper{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.jobPosition{
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+.locationSalaryWrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 5px 0px;
+}
+.detailWithIcon{
+    display: flex;
+    align-items: center;
+    padding:8px 0px;
+    margin-right: 9px;
+}
+.detailWithIcon img{
+    padding-right: 5px;
+}
+.locatioModeWrapper{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.textDetail{
+    margin-right: 9px;
+    color: #ED5353;
+    white-space:nowrap;
+    text-wrap:nowrap;
+}
+.jobDetailText{
+    text-wrap:nowrap;
+    white-space:nowrap;
+}
+
+.jobCardRightWrapper{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.skillsWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.skillBlock{
+    padding: 10px;
+    background: #FFEEEE;
+    margin-left: 15px;
+}
+.editDetailsButtons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.editJobBtn{
+    padding: 5px 20px;
+    border: solid 2px #ED5353;
+    border-radius: 4px;
+    background: white;
+    color: #ED5353;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.viewDetailBtn{
+    padding: 8px 20px;
+    background: #ED5353;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+@media(max-width:768px){
+    .jobsCard{
+        flex-direction: column;
+    }
+    .jobCardLeftWrapper{
+        width: 100%;
+    }
+    .jobCardRightWrapper{
+        width: 100%;
+        /* justify-content: flex-start; */
+    }
+    .skillBlock{
+        margin: 5px 5px;
+        white-space: nowrap;
+    }
+    .skillsWrapper{
+        flex-wrap: wrap;
+    }
+    .locationSalaryWrapper{
+        flex-wrap: wrap;
+    }
+}

@@ -8,7 +8,6 @@ import SearchSection from "./searchSection/SearchSection";
 import JobCard from "./jobCard/JobCard";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-
 import loadingGif from "../common/loading.svg";
 
 export default function Home() {

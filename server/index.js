@@ -22,18 +22,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Use the updated __dirname here
-app.use(express.static(path.join(__dirname,"..","client","build")));
+
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
 
 // Health check API
 app.get("/health", (req, res) => {
   res.send("Everything is working fine!");
-});
-
-
-app.use((req, res, next) => {
-  const err = new Error("Page Not found");
-  err.status = 404;
-  next(err);
 });
 
 
@@ -269,6 +263,8 @@ app.get("/api/jobs/:id", async (req, res, next) => {
     next(err);
   }
 });
+
+
 
 
 

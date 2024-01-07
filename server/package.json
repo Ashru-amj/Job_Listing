@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install" :"cd client && npm i && cd .. && cd server && npm i",
-      "build" : "cd client && npm run build"
+    "install": "cd client && npm i && cd .. && cd server && npm i",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",

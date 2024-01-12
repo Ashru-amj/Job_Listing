@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./JobCard.module.css";
 import { useNavigate } from "react-router-dom";
-
+import logot from "../jobCard/download.jpeg"
 import peopleIcon from "./images/people.svg";
 import flagIcon from "./images/flag.svg";
 import rupeeIcon from "./images/rupee.svg";
@@ -13,11 +13,15 @@ export default function JobCard(props) {
     <div className={styles.jobsCard}>
       <div className={styles.jobCardLeftWrapper}>
         <div className={styles.companyLogoWrapper}>
-          <img
-            className={styles.companyLogo}
-            src={props.job.logo}
-            alt="company logo"
-          ></img>
+        {props.job && props.job.logo && (
+            <img
+              className={styles.companyLogo}
+              // src={props.job.logo}
+              src={logot}
+              alt="company logo"
+            />
+          )}
+          
         </div>
         <div className={styles.jobDetailsWrapper}>
           <p className={styles.jobPosition}>{props.job.position}</p>

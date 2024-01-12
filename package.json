@@ -1,0 +1,12 @@
+{
+  "name": "job_listing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install" :"cd client && npm i && cd .. && cd server && npm i",
+    "build" : "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
